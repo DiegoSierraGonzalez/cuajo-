@@ -5,22 +5,43 @@ body {
     color: #333;
     text-align: center;
 }
+
 .landing {
-    background: linear-gradient(to bottom right, #ffc0cb, #d3d3d3);
-    padding: 30px 20px;
+    background-image: url('https://images.unsplash.com/photo-1611142324924-02020d6d62fa?auto=format&fit=crop&w=1470&q=80'); /* Imagen F1 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: #fff;
+    position: relative;
 }
+
+.landing::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* Oscurecer para que el texto se lea bien */
+    z-index: 0;
+}
+
 .landing h1 {
     font-size: 2.5em;
     font-weight: 300;
     color: #fff;
+    position: relative;
+    z-index: 1;
 }
+
 .main-photo {
     width: 60%;
     max-width: 400px;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -29,14 +50,17 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
 nav li {
     padding: 15px 25px;
     cursor: pointer;
     transition: background 0.3s;
 }
+
 nav li:hover {
     background: #ffb6c1;
 }
+
 .tab {
     display: none;
     padding: 20px;
@@ -47,6 +71,8 @@ nav li:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 .spotify-player {
     margin: 30px auto;
 }
+
