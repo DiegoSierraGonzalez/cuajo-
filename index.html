@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FELOZ FELOZ no cumpleaños</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="landing">
+        <h1>FELOZ FELOZ no cumpleaños, Cuajo 🎉</h1>
+        <img src="img/cuajo.jpg" alt="Cuajo" class="main-photo">
+    </div>
+    
+    <nav>
+        <ul>
+            <li onclick="showTab('cumple')">🎂 No Cumpleaños</li>
+            <li onclick="showTab('momentos')">📸 Momentos</li>
+            <li onclick="showTab('sorpresa')">🎁 Sorpresa</li>
+            <li onclick="showTab('mensaje')">💌 Mensaje</li>
+        </ul>
+    </nav>
+
+    <section id="cumple" class="tab">Porque cualquier día es perfecto para celebrarte, Cuajo.</section>
+    <section id="momentos" class="tab">Aquí irán tus momentos más bonitos 😘</section>
+    <section id="sorpresa" class="tab">✨ ¡Sorpresa oculta aquí! ✨</section>
+    <section id="mensaje" class="tab">Gracias por ser tú. Feliz no cumpleaños 💖</section>
+
+    <div class="spotify-player">
+        <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/track/2BjRhZ2IJmsO1GRquNldsP?utm_source=generator" 
+            width="300" height="80" frameBorder="0" allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab').forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+        window.onload = () => showTab('cumple');
+    </script>
+</body>
+</html>

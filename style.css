@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+.landing {
+    background: linear-gradient(to bottom right, #ffc0cb, #d3d3d3);
+    padding: 30px 20px;
+}
+.landing h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #fff;
+}
+.main-photo {
+    width: 60%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #e6e6e6;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+nav li:hover {
+    background: #ffb6c1;
+}
+.tab {
+    display: none;
+    padding: 20px;
+    font-size: 1.2em;
+    background: #fff;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.spotify-player {
+    margin: 30px auto;
+}
