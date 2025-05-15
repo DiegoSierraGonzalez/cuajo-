@@ -4,52 +4,80 @@
     <meta charset="UTF-8">
     <title>¡FELIZ FELIZ NO CUMPLEAÑOS! ó Fröhlichen Nicht-Geburtstag!</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos para las animaciones */
+        #momentos img {
+            width: 150px; /* Ajusta el tamaño de las imágenes */
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #momentos img:hover {
+            transform: scale(1.1); /* Zoom al pasar el mouse */
+        }
+
+        #momentos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <div class="landing">
-        <h1>¡FELIZ FELIZ NO CUMPLEAÑOS! ó Fröhlichen Nicht-Geburtstag! 🎉</h1>
-     <img src="FotoCuajo.jpg" alt="Foto de Cuajo" class="main-photo">
+        <h1 style="color: #ffffff;">¡FELIZ FELIZ NO CUMPLEAÑOS! ó Fröhlichen Nicht-Geburtstag!</h1>
+        <img src="FotoCuajo.jpg" alt="Cuajo" class="main-photo">
     </div>
     
     <nav>
         <ul>
             <li onclick="showTab('cumple')">🎂 No Cumpleaños</li>
-            <li onclick="showTab('Viaje')">📸 Momentos</li>
-            <li onclick="showTab('Invitación ')">🎁 Sorpresa</li>
+            <li onclick="showTab('momentos')">📸 Momentos</li>
+            <li onclick="showTab('sorpresa')">🎁 INVITACIÓN </li>
             <li onclick="showTab('mensaje')">💌 Cartita</li>
         </ul>
     </nav>
 
-    <section id="cumple" class="tab">Porque cualquier día es perfecto para celebrarte, Cuajo.</section>
-    <section id="Viaje" class="tab">Aquí irán tus momentos más bonitos 😘</section>
-   <section id="Invitación"> class="tab"> ¡Hola, Cuajo 🏁❤️
+    <section id="cumple" class="tab" style="display: block;">Porque cualquier día es perfecto para celebrarte, Cuajo.</section>
+    <section id="momentos" class="tab">
+        <div id="momentos">
+            <!-- Agregar las fotos aquí -->
+            <img src="foto1.jpg" alt="Recuerdo 1">
+            <img src="foto2.jpg" alt="Recuerdo 2">
+            <img src="foto3.jpg" alt="Recuerdo 3">
+            <img src="foto4.jpg" alt="Recuerdo 4">
+        </div>
+    </section>
+    <section id="sorpresa" class="tab">
+        ¡Hola, Cuajo 🏁❤️
 
-Tengo una propuesta digna del paddock de Ferrari:
-Quiero invitarte a ver la nueva película de la Fórmula 1.
+        Tengo una propuesta digna del paddock de Ferrari:
+        Quiero invitarte a ver la nueva película de la Fórmula 1.
 
-Tú serías la escudería Ferrari, impecable, con clase, y siempre robando miradas…
-y yo, bueno… yo sería el piloto que solo quiere una vuelta contigo, aunque sea en la curva más cerrada del calendario 😅🏎️💘
+        Tú serías la escudería Ferrari, impecable, con clase, y siempre robando miradas…
+        y yo, bueno… yo sería el piloto que solo quiere una vuelta contigo, aunque sea en la curva más cerrada del calendario 😅🏎️💘
 
-Si te animas, prometo llevar mi pierna buena, comentarios de segundo lugar (porque el primero siempre te lo dejo a ti) y buena compañía en la recta final.
-Mas chistes malos como ese.
+        Si te animas, prometo llevar mi pierna buena, comentarios de segundo lugar (porque el primero siempre te lo dejo a ti) y buena compañía en la recta final.
+        Mas chistes malos como ese.
 
-¿Aceptas esta pole position a mi lado? ✨</section>
-    <section id="mensaje" class="tab">Querida Cuajo,
+        ¿Aceptas esta pole position a mi lado? ✨
+    </section>
+    <section id="mensaje" class="tab">
+        Querida Cuajo,
 
-¡Fröhlichen Nicht-Geburtstag!
-Hoy no es tu cumpleaños, pero eso no me detiene para celebrarte como si lo fuera.
+        ¡Fröhlichen Nicht-Geburtstag!
+        Hoy no es tu cumpleaños, pero eso no me detiene para celebrarte como si lo fuera.
 
-Sé que no estuve contigo ese día especial, y créeme que lo he tenido en el corazón desde entonces. A veces la vida nos pone lejos en los momentos que más quisiéramos estar cerca, pero hoy, con toda la intención y el cariño del mundo, quiero decirte lo que no pude en ese momento.
+        Sé que no estuve contigo ese día especial, y créeme que lo he tenido en el corazón desde entonces. A veces la vida nos pone lejos en los momentos que más quisiéramos estar cerca, pero nunca se me olvida tu día, ni mucho menos lo que significas para mí.
 
-No se me olvida tu día, ni mucho menos lo que significas para mí. Al contrario, he estado esperando este pequeño instante perfecto para recordarte que eres una persona increíble. Tu risa, tu forma de ver la vida, la manera en que iluminas un lugar con solo estar ahí… todo eso te hace inolvidable.
+        Este “no cumpleaños” es solo una excusa para decirte que me importas muchísimo. Que me emociona cada día compartir momentos contigo, y que si pudiera retroceder el tiempo, estaría ahí.
 
-Este “no cumpleaños” es solo una excusa para decirte que me importas muchísimo. Que me emociona cada día compartir momentos contigo, y que si pudiera retroceder el tiempo, estaría ahí a tu lado celebrando como se debe, con pastel, abrazos y una sonrisa que no me cabe en el pecho.
+        Deseo que todo lo bueno que sueñas siga llegando a tu vida, y que nunca te falte un motivo para sonreír. Yo, por mi parte, siempre voy a estar buscando nuevas formas de hacerte sentir especial.
 
-Deseo que todo lo bueno que sueñas siga llegando a tu vida, y que nunca te falte un motivo para sonreír. Yo, por mi parte, siempre voy a estar buscando nuevas formas de hacerte sentir especial, así sea en un día cualquiera como hoy.
+        Brindo por ti, Cuajo. Por lo que eres, por lo que sueñas y por todo lo bonito que aún nos queda por vivir.
 
-Brindo por ti, Cuajo. Por lo que eres, por lo que sueñas y por todo lo bonito que aún nos queda por vivir.
-
-MIT LIEBE, Diego 💖</section>
+        MIT LIEBE, Diego 💖
+    </section>
 
     <div class="spotify-player">
         <iframe style="border-radius:12px" 
@@ -62,9 +90,12 @@ MIT LIEBE, Diego 💖</section>
 
     <script>
         function showTab(tabId) {
+            // Ocultar todas las pestañas
             document.querySelectorAll('.tab').forEach(tab => tab.style.display = 'none');
+            // Mostrar la pestaña seleccionada
             document.getElementById(tabId).style.display = 'block';
         }
+        // Mostrar la pestaña inicial al cargar la página
         window.onload = () => showTab('cumple');
     </script>
 </body>
